@@ -282,6 +282,7 @@ function openProductDetails(productId) {
         <div class="product-detail-info">
             <div class="product-detail-title">${product.name}</div>
             <div class="product-detail-category">${product.category}</div>
+            <div class="product-detail-Available">${product.available ? 'متوفر' : 'غير متوفر'}</div>
             <div class="product-detail-price">${product.price} جنيه</div>
                         
             <div class="product-detail-description">
@@ -459,7 +460,19 @@ function getColorCode(colorName) {
         'رمادي': '#808080',
         'بني': '#A52A2A',
         'ذهبي': '#FFD700',
-        'فضي': '#C0C0C0'
+        'فضي': '#C0C0C0',
+        'كستنائي': '#800000',
+        'زيتوني': '#808000',
+        'بحري': '#4682B4',
+        'كحلي': '#00008B',
+        'فوشيا': '#FF00FF',
+        'لافندر': '#E6E6FA',
+        'ليموني': '#FFFACD',
+        'نعناعي': '#98FF98',
+        'لافندر رمادي': '#C4C3D0',
+        'بيج': '#F5F5DC',
+        'كريمي': '#FFFDD0',
+        'أزرق ملكي': '#4169E1'        
     };
     
     return colorMap[colorName] || '#CCCCCC'; // لون افتراضي إذا لم يتم العثور على اللون
