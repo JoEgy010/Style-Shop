@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الأناقة - ملابس وأحذية وإكسسوارات</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- الهيدر والنافبار -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-shopping-bag"></i> ستايل شوب</h1>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle-input">
+                <span class="slider"></span>
+            </label>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="categories-nav">
+        <div class="container">
+            <ul class="categories">
+                <li><a href="#" data-category="all" class="active"><i class="fas fa-th-large"></i> جميع المنتجات</a></li>
+                <li><a href="#" data-category="تيشيرتات"><i class="fas fa-tshirt"></i> تيشيرتات</a></li>
+                <li><a href="#" data-category="قمصان"><i class="fas fa-vest"></i> قمصان</a></li>
+                <li><a href="#" data-category="بناطيل"><i class="fas fa-socks"></i> بناطيل</a></li>
+                <li><a href="#" data-category="أحذية"><i class="fas fa-shoe-prints"></i> أحذية</a></li>
+                <li><a href="#" data-category="إكسسوارات"><i class="fas fa-watch"></i> إكسسوارات</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <main>
+        <div class="container">
+            <!-- قسم البحث والتصفية -->
+            <div class="filter-section">
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="ابحث عن منتجات...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="price-range">السعر:</label>
+                        <div class="price-range-container">
+                            <input type="range" id="price-range" min="0" max="1000" step="50" value="1000">
+                            <span id="price-value">1000 جنيه</span>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>المقاس:</label>
+                        <div class="size-filters">
+                            <button class="size-filter-btn" data-size="S">S</button>
+                            <button class="size-filter-btn" data-size="M">M</button>
+                            <button class="size-filter-btn" data-size="L">L</button>
+                            <button class="size-filter-btn" data-size="XL">XL</button>
+                            <button class="size-filter-btn" data-size="XXL">XXL</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>ترتيب حسب:</label>
+                        <select id="sort-select">
+                            <option value="default">الافتراضي</option>
+                            <option value="price-asc">السعر: من الأقل للأعلى</option>
+                            <option value="price-desc">السعر: من الأعلى للأقل</option>
+                            <option value="name-asc">الاسم: أ-ي</option>
+                        </select>
+                    </div>
+                    <button id="reset-filters-btn" class="reset-filters-btn">إعادة ضبط التصفية</button>
+                </div>
+            </div>
+            
+            <div class="filter-tags" id="filter-tags">
+                <!-- ستظهر هنا العلامات المختارة للتصفية -->
+            </div>
+
+            <div class="products-count" id="products-count">
+                <!-- عدد المنتجات المعروضة -->
+            </div>
+            
+            <div class="products-grid" id="products-container">
+                <!-- سيتم إضافة المنتجات هنا بواسطة JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- قسم التفاصيل (مخفي بشكل افتراضي) -->
+    <div class="product-detail-overlay" id="product-detail">
+        <div class="product-detail-container">
+            <div class="close-btn" id="close-detail">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="product-detail-content" id="product-detail-content">
+                <!-- سيتم إضافة تفاصيل المنتج هنا بواسطة JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ستايل شوب</h3>
+                    <p>متجر الأزياء الأول للملابس والإكسسوارات العصرية</p>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <ul class="contact-info">
+                        <li><i class="fab fa-whatsapp"></i> واتساب: 01110675661</li>
+                        <li><i class="far fa-envelope"></i> البريد الإلكتروني: joegybt@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul class="quick-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="cart.html">سلة التسوق</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; 2023 - ستايل شوب</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- تضمين ملف التكامل مع تيليجرام أولاً -->
+    <script src="js/telegram.js"></script>
+    <!-- تضمين ملف المشاركة الاجتماعية -->
+    <script src="js/share.js"></script>
+    <!-- تضمين ملف السكريبت الرئيسي -->
+    <script src="js/script.js"></script>
+
+    <!-- تم إزالة زر إعدادات التليجرام -->
+</body>
+</html>

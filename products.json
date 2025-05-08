@@ -1,0 +1,83 @@
+[
+  {
+    "id": "G020",
+    "name": "ترينج شورت",
+    "description": "🔥 ترينج شورت أوفر سايز زونط خامة ميلتون ليكرا مبرد، مريح وخفيف، بتقفيل محترم وكابيشو من غير جيوب، متوفر بألوان (أسود - أبيض - مينت جرين - أورنج - بيج) ومقاسات (L-XL-XXL)، جدول التلبيس: من 55 لـ 70 كيلو لارج، من 70 لـ 80 إكس لارج، من 80 لـ 95 اتنين إكس، اطلب دلوقتي وخليك على المود 💥👕.",
+    "price": 250,
+    "category": "تيشيرتات",
+    "sizes": ["L", "XL", "2XL"],
+    "colors": {
+      "أسود": "images/G020/41389.jpg",
+      "أبيض": "images/G020/72921.jpg",
+      "برتقالي": "images/G020/10020.jpg",
+      "أخضر": "images/G020/81007.jpg",
+      "بيج": "images/G020/40053.jpg"
+    }
+    
+  },
+  {
+    "id": "P002",
+    "name": "بنطلون جينز",
+    "price": 450,
+    "category": "بناطيل",
+    "sizes": ["30", "32", "34", "36", "38"],
+    "colors": {
+      "أزرق غامق": "images/products/jeans-dark.svg",
+      "أزرق فاتح": "images/products/jeans-light.svg",
+      "أسود": "images/products/jeans-black.svg"
+    },
+    "hiddenCode": "JNS-001"
+  },
+  {
+    "id": "P003",
+    "name": "حذاء رياضي",
+    "price": 650,
+    "category": "أحذية",
+    "sizes": ["40", "41", "42", "43", "44", "45"],
+    "colors": {
+      "أبيض": "images/products/sneakers-white.svg",
+      "أسود": "images/products/sneakers-black.svg",
+      "أحمر": "images/products/sneakers-red.svg"
+    },
+    "hiddenCode": "SHE-001"
+  },
+  {
+    "id": "P004",
+    "name": "ساعة يد",
+    "price": 850,
+    "category": "إكسسوارات",
+    "sizes": ["واحد"],
+    "colors": {
+      "فضي": "images/products/watch-silver.svg",
+      "ذهبي": "images/products/watch-gold.svg",
+      "أسود": "images/products/watch-black.svg"
+    },
+    "hiddenCode": "ACC-001"
+  },
+  {
+    "id": "P005",
+    "name": "قميص كاجوال",
+    "price": 350,
+    "category": "قمصان",
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": {
+      "أبيض": "images/products/shirt-white.svg",
+      "أزرق سماوي": "images/products/shirt-blue.svg",
+      "وردي": "images/products/shirt-pink.svg"
+    },
+    "hiddenCode": "SHT-001"
+  },
+  {
+    "id": "P006",
+    "name": "سويت شيرت",
+    "price": 400,
+    "category": "تيشيرتات",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": {
+      "رمادي": "images/products/sweatshirt-grey.svg",
+      "أسود": "images/products/sweatshirt-black.svg",
+      "أزرق": "images/products/sweatshirt-blue.svg"
+    },
+    "hiddenCode": "SWT-001"
+  }
+]
