@@ -195,6 +195,7 @@ ${productsDetails}
 
 💰 ملخص الطلب:
 إجمالي الطلب: ${orderData.total} جنيه
+${orderData.cartItems.length} منتجات
 
 📅 تاريخ الطلب: ${new Date().toLocaleString('ar-EG')}
 `;
