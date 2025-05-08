@@ -964,11 +964,11 @@ main {
     justify-content: center;
     align-items: center;
     border: 1px solid var(--border-color);
-    background-color: white; /* تغيير لون الخلفية إلى أبيض */
+    background-color: rgb(0, 0, 0); /* تغيير لون الخلفية إلى أبيض */
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: var(--transition);
-    color: var(--text-color);
+    transition: var(--warning-color);
+    color: rgb(255, 255, 255);
 }
 
 .size-option:hover, .size-option.active {
@@ -1248,6 +1248,17 @@ footer::before {
 
 .footer-section {
     flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 30%;
     min-width: 200px;
     margin-bottom: 20px;
     padding: 0 15px;
@@ -1833,3 +1844,71 @@ input, select, textarea, button {
     color: var(--title-color);
     font-size: 16px;
 }
+
+/* From Uiverse.io by Yaya12085 */ 
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #0163E0;
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 30px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 10%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 150px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 10px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px ,2px);
+  }
