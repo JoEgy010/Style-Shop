@@ -40,7 +40,7 @@
     "sizes": ["41", "42", "43", "44", "45"],
     "colors": {
       "أبيض": "images/al001/1.jpg",
-      "أبيض+أسود": "images/al001/2.jpg",
+      "0": "images/al001/2.jpg",
       "أسود": "images/al001/3.jpg"
     }
   },
